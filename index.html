@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLP Axie Converter</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+<body>
+    <img src="./source/img/logo.png" style="user-select: none;-webkit-user-drag: none;">
+    <div style="width: 400px;padding: 60px;">
+        <div style="display: flex;">
+            <div class="InputIcon">
+              <img src="./source/img/slp-icon.png" >
+            </div>
+            <input type="text" onkeyup="Calc()" class="InputCoin" value=""></input>
+        </div>
+    <div class="HeaderList">
+        Coins Price
+        </div>
+        <div class="ItemList">
+            <div class="ItemIcon"><img src="./source/img/dolar-icon.png"></div>
+            <div>
+                <div style="display: flex;margin-bottom: 5px;">
+                    <div class="currency-type-min coin-type-min">COIN</div>
+                    <div class="currency-name-min">USD</div>
+                </div>
+                <div id="Coin_Value_USD" style="margin-left: 10px;font-size: 20px;">0.00</div>
+            </div>
+        </div>
+        <div class="ItemList">
+            <div class="ItemIcon"><img src="./source/img/real-icon.png"></div>
+                <div>
+                    <div style="display: flex;margin-bottom: 5px;">
+                        <div class="currency-type-min coin-type-min">COIN</div>
+                        <div class="currency-name-min">BRL</div>
+                    </div>
+                    <div id="Coin_Value_BRL" style="margin-left: 10px;font-size: 20px;">0.00</div>
+                </div>
+            </div>
+        <div class="ItemList">
+            <div class="ItemIcon"><img src="./source/img/bitcoin-icon.png"></div>
+            <div>
+                <div style="display: flex;margin-bottom: 5px;">
+                    <div class="currency-type-min crypto-type-min">CRYPTO</div>
+                    <div class="currency-name-min">BTC</div>
+                </div>
+                <div id="Coin_Value_BTC" style="margin-left: 10px;font-size: 20px;">0.00</div>
+                <div id="Coin_Var_BTC" class="" style="margin-left: 10px;font-size: 12px">0%</div>
+            </div>
+        </div>
+        <div class="ItemList">
+            <div class="ItemIcon"><img src="./source/img/eth-icon.png"></div>
+            <div>
+                <div style="display: flex;margin-bottom: 5px;">
+                    <div class="currency-type-min crypto-type-min">CRYPTO</div>
+                    <div class="currency-name-min">ETH</div>
+                </div>
+                <div id="Coin_Value_ETH" style="margin-left: 10px;font-size: 20px;">0.00</div>
+                <div id="Coin_Var_ETH" class="" style="margin-left: 10px;font-size: 12px">0%</div>
+            </div>
+        </div> 
+        <div class="ItemList" style="border-bottom-style: solid;border-radius: 0px 0px 5px 5px;">
+            <div class="ItemIcon"><img src="./source/img/lite-icon.png"></div>
+            <div>
+                <div style="display: flex;margin-bottom: 5px;">
+                    <div class="currency-type-min crypto-type-min">CRYPTO</div>
+                    <div class="currency-name-min">LTC</div>
+                </div>
+                <div id="Coin_Value_LTC" style="margin-left: 10px;font-size: 20px;">0.00</div>
+                <div id="Coin_Var_LTC" class="" style="margin-left: 10px;font-size: 12px">0%</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>          
+</body>
+</html>
